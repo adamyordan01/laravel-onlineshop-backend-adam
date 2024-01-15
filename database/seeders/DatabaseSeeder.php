@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // call user factory
-        $users = User::factory()
-            ->count(10)
-            ->create();
+        // $users = User::factory()
+        //     ->count(10)
+        //     ->create();
 
-        Category::factory(10)->create();
+        // Category::factory(10)->create();
         Product::factory(100)->create();
 
         // $categories = Category::factory()
