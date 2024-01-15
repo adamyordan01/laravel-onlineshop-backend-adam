@@ -27,19 +27,19 @@
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="login">Email / Kode Karyawan</label>
+                                        <label for="email">Email</label>
                                         <input
-                                            id="login"
+                                            id="email"
                                             type="text"
                                             class="form-control"
-                                            name="login"
+                                            name="email"
                                             tabindex="1"
-                                            value="{{ old('login') }}"
-                                            placeholder="Email / Kode Karyawan"
+                                            value="{{ old('email') }}"
+                                            placeholder="Email"
                                             autofocus
                                             required
                                         >
-                                        @error('login')
+                                        @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; Helpdesk Support RSUD Langsa {{ date('Y') }}
+                            Copyright &copy; LARAVEL ONLINE SHOP ADAM {{ date('Y') }}
                         </div>
                     </div>
                 </div>
