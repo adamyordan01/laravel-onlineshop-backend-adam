@@ -24,6 +24,12 @@
                     <i class="fas fa-list-ol"></i> <span>Category</span>
                 </a>
             </li>
+            <li class="{{ request()->is('product') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('product.index') }}">
+                    <i class="fas fa-box"></i> <span>Product</span>
+                </a>
+            </li>
+
         </ul>
     </aside>
 </div>
